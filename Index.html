@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CG Files — Privacy Policy | Chirag Tech Studios</title>
+
+  <meta name="description"
+        content="Privacy Policy for CG Files, a file management application by Chirag Tech Studios. Learn how CG Files handles device storage, permissions, advertising and privacy.">
+
+  <meta name="robots" content="index, follow">
+
+  <style>
+    :root {
+      --bg: #12090a;
+      --surface: #1d1011;
+      --surface-2: #291719;
+      --primary: #ffaaa3;
+      --primary-dark: #8f3030;
+      --text: #fff3f1;
+      --muted: #cdb8b6;
+      --border: rgba(255,255,255,0.09);
+      --shadow: 0 20px 60px rgba(0,0,0,.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        Roboto,
+        Arial,
+        Helvetica,
+        sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(255,170,163,.12), transparent 35%),
+        linear-gradient(180deg, #12090a, #180c0d 45%, #100708);
+      color: var(--text);
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      background: rgba(18, 9, 10, .88);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar-inner {
+      width: min(1100px, calc(100% - 32px));
+      margin: auto;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: .2px;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      background: linear-gradient(145deg, #ffb5ae, #d95c5c);
+      color: #2a0b0d;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 16px;
+      box-shadow: 0 8px 25px rgba(255,130,120,.2);
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 17px;
+    }
+
+    .brand-text small {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-btn {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: .2s ease;
+    }
+
+    .icon-btn:hover {
+      background: rgba(255,170,163,.12);
+      transform: translateY(-1px);
+    }
+
+    .container {
+      width: min(1000px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 80px 0 55px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 13px;
+      border: 1px solid rgba(255,170,163,.22);
+      background: rgba(255,170,163,.07);
+      color: var(--primary);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 7vw, 58px);
+      line-height: 1.08;
+      letter-spacing: -1.8px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .meta {
+      margin-top: 22px;
+      color: #a99290;
+      font-size: 13px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      gap: 28px;
+      align-items: start;
+      padding-bottom: 70px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 95px;
+      background: rgba(29,16,17,.78);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .toc-title {
+      font-weight: 800;
+      margin-bottom: 13px;
+    }
+
+    .toc a {
+      display: block;
+      padding: 7px 8px;
+      border-radius: 9px;
+      color: var(--muted);
+      font-size: 13px;
+      transition: .2s ease;
+    }
+
+    .toc a:hover {
+      background: rgba(255,170,163,.08);
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .policy {
+      background: rgba(29,16,17,.82);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: clamp(22px, 5vw, 48px);
+      box-shadow: var(--shadow);
+    }
+
+    .notice {
+      padding: 18px;
+      border-radius: 16px;
+      background: rgba(255,170,163,.08);
+      border: 1px solid rgba(255,170,163,.18);
+      margin-bottom: 32px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    section {
+      scroll-margin-top: 100px;
+      padding: 10px 0 30px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 28px;
+    }
+
+    section:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 23px;
+      line-height: 1.3;
+      margin-bottom: 13px;
+      color: var(--text);
+    }
+
+    h3 {
+      font-size: 17px;
+      margin: 18px 0 8px;
+      color: var(--primary);
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    ul {
+      margin: 10px 0 16px 22px;
+      color: var(--muted);
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    .contact-box {
+      background: linear-gradient(
+        145deg,
+        rgba(255,170,163,.12),
+        rgba(255,255,255,.025)
+      );
+      border: 1px solid rgba(255,170,163,.18);
+      border-radius: 18px;
+      padding: 22px;
+      margin-top: 15px;
+    }
+
+    .email {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 700;
+      word-break: break-word;
+    }
+
+    .copy-btn {
+      margin-top: 14px;
+      padding: 10px 15px;
+      border: 0;
+      border-radius: 10px;
+      background: var(--primary);
+      color: #2a0b0d;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 35px 0 50px;
+      text-align: center;
+      color: #9e8987;
+      font-size: 13px;
+    }
+
+    .footer strong {
+      color: var(--primary);
+    }
+
+    #topBtn {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 45px;
+      height: 45px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      background: var(--surface-2);
+      color: var(--primary);
+      cursor: pointer;
+      display: none;
+      box-shadow: var(--shadow);
+      z-index: 999;
+    }
+
+    body.light {
+      --bg: #fff7f6;
+      --surface: #ffffff;
+      --surface-2: #fff0ee;
+      --primary: #a83232;
+      --primary-dark: #7e2525;
+      --text: #241718;
+      --muted: #635454;
+      --border: rgba(50,20,20,.1);
+      --shadow: 0 20px 60px rgba(70,20,20,.08);
+
+      background:
+        radial-gradient(circle at top right, rgba(255,150,140,.18), transparent 35%),
+        #fff7f6;
+    }
+
+    body.light .topbar {
+      background: rgba(255,247,246,.88);
+    }
+
+    body.light .brand-icon {
+      color: white;
+    }
+
+    body.light .icon-btn {
+      color: var(--text);
+      background: rgba(0,0,0,.03);
+    }
+
+    body.light .policy,
+    body.light .toc {
+      background: rgba(255,255,255,.88);
+    }
+
+    @media (max-width: 800px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: relative;
+        top: auto;
+        order: -1;
+      }
+
+      .toc-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3px;
+      }
+
+      .hero {
+        padding-top: 55px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container,
+      .topbar-inner {
+        width: min(100% - 22px, 1000px);
+      }
+
+      .topbar-inner {
+        min-height: 62px;
+      }
+
+      .brand-text small {
+        display: none;
+      }
+
+      .policy {
+        border-radius: 18px;
+        padding: 22px 18px;
+      }
+
+      .toc-links {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="topbar-inner">
+
+      <div class="brand">
+        <div class="brand-icon">CG</div>
+
+        <div class="brand-text">
+          <span>CG Files</span>
+          <small>Chirag Tech Studios</small>
+        </div>
+      </div>
+
+      <div class="top-actions">
+        <button
+          class="icon-btn"
+          id="themeBtn"
+          aria-label="Toggle theme"
+          title="Toggle theme">
+          ☼
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+
+    <div class="container">
+
+      <div class="hero">
+
+        <div class="hero-badge">
+          🔒 Privacy & Security
+        </div>
+
+        <h1>
+          CG Files
+          <span>Privacy Policy</span>
+        </h1>
+
+        <p>
+          This Privacy Policy explains how CG Files handles device storage,
+          permissions, advertising, third-party services and privacy.
+        </p>
+
+        <div class="meta">
+          Last Updated: <strong>20 August 2026</strong>
+        </div>
+
+      </div>
+
+
+      <div class="layout">
+
+        <!-- TABLE OF CONTENTS -->
+        <aside class="toc">
+
+          <div class="toc-title">
+            Contents
+          </div>
+
+          <div class="toc-links">
+
+            <a href="#approach">Privacy Approach</a>
+            <a href="#storage">Storage & Files</a>
+            <a href="#permissions">Permissions</a>
+            <a href="#ads">Advertising</a>
+            <a href="#thirdparty">Third-Party Services</a>
+            <a href="#vault">Vault</a>
+            <a href="#sharing">File Sharing</a>
+            <a href="#security">Security</a>
+            <a href="#deletion">Data Deletion</a>
+            <a href="#children">Children's Privacy</a>
+            <a href="#changes">Changes</a>
+            <a href="#contact">Contact</a>
+
+          </div>
+
+        </aside>
+
+
+        <!-- POLICY -->
+        <article class="policy">
+
+          <div class="notice">
+            <strong>Important:</strong>
+            CG Files is designed as an offline-first file-management
+            application. Core file-management operations are intended to
+            operate locally on your Android device. Third-party services,
+            such as advertising, may process information separately according
+            to their own policies.
+          </div>
+
+
+          <section id="approach">
+            <h2>1. Our Privacy Approach</h2>
+
+            <p>
+              Chirag Tech Studios ("we", "us", or "our") operates the
+              CG Files mobile application ("CG Files", "the App").
+            </p>
+
+            <p>
+              CG Files is designed primarily as a local, offline-first
+              file-management application. The core file-management
+              functionality is designed to operate on the user's device.
+            </p>
+
+            <p>
+              CG Files does not require users to create an account or log in
+              to use its core file-management features.
+            </p>
+          </section>
+
+
+          <section id="storage">
+            <h2>2. Files and Device Storage</h2>
+
+            <p>
+              CG Files requires access to device storage so that users can
+              browse and manage their own files.
+            </p>
+
+            <p>
+              Depending on the Android version and storage mechanism used by
+              the App, CG Files may access files and folders that the user has
+              explicitly authorized the App to access.
+            </p>
+
+            <p>This access may be required for:</p>
+
+            <ul>
+              <li>Browsing files and folders</li>
+              <li>Viewing images and videos</li>
+              <li>Managing audio files</li>
+              <li>Managing documents</li>
+              <li>Managing downloads</li>
+              <li>Managing APK files</li>
+              <li>Searching files</li>
+              <li>Copying and moving files</li>
+              <li>Renaming files</li>
+              <li>Deleting supported files</li>
+              <li>Viewing file information</li>
+              <li>Storage analysis</li>
+            </ul>
+
+            <p>
+              CG Files does not intentionally upload the contents of your
+              personal files to Chirag Tech Studios servers for ordinary
+              file-management operations.
+            </p>
+          </section>
+
+
+          <section id="permissions">
+            <h2>3. Permissions</h2>
+
+            <p>
+              CG Files may request storage access or other Android-supported
+              file-access mechanisms required for its file-management
+              functionality.
+            </p>
+
+            <p>These permissions or access mechanisms may be used for:</p>
+
+            <ul>
+              <li>Reading files</li>
+              <li>Displaying files</li>
+              <li>Creating folders</li>
+              <li>Modifying files</li>
+              <li>Copying files</li>
+              <li>Moving files</li>
+              <li>Renaming files</li>
+              <li>Deleting files</li>
+              <li>Analyzing storage</li>
+            </ul>
+
+            <p>
+              CG Files does not request access to contacts, microphone,
+              camera, or location unless a future feature specifically
+              requires such permission and users are appropriately informed.
+            </p>
+          </section>
+
+
+          <section id="ads">
+            <h2>4. Advertising — Google AdMob</h2>
+
+            <p>
+              CG Files may display advertisements using Google AdMob and the
+              Google Mobile Ads SDK.
+            </p>
+
+            <p>
+              Because third-party advertising services may process certain
+              device and advertising information, advertising-related data
+              handling is different from the local file-management
+              functionality of CG Files.
+            </p>
+
+            <p>
+              Depending on the advertising configuration, device settings,
+              applicable laws, consent choices, and advertising technology
+              used, Google and its advertising partners may process information
+              such as:
+            </p>
+
+            <ul>
+              <li>Advertising identifiers</li>
+              <li>Device and app information</li>
+              <li>IP address or related network information</li>
+              <li>Approximate location derived from network information</li>
+              <li>Ad interaction information</li>
+              <li>Diagnostic and performance information</li>
+              <li>Information used for advertising measurement</li>
+              <li>Information used for personalized or non-personalized advertising</li>
+            </ul>
+
+            <p>
+              Advertising-related processing is subject to Google's
+              applicable privacy and advertising policies.
+            </p>
+
+            <p>
+              Chirag Tech Studios does not control all data processing
+              performed by Google or other third-party advertising providers.
+            </p>
+          </section>
+
+
+          <section>
+            <h2>5. Personalized and Non-Personalized Advertising</h2>
+
+            <p>
+              Depending on the user's region, consent choices, device settings
+              and the application's advertising configuration, advertisements
+              may be personalized or non-personalized.
+            </p>
+
+            <p>
+              Where legally required, appropriate consent mechanisms may be
+              presented to users.
+            </p>
+          </section>
+
+
+          <section id="thirdparty">
+            <h2>6. Third-Party Services</h2>
+
+            <p>
+              CG Files may use third-party services to provide advertising,
+              diagnostics, analytics, or other application functionality.
+            </p>
+
+            <p>
+              The primary advertising service currently intended for CG Files
+              is Google AdMob / Google Mobile Ads SDK.
+            </p>
+
+            <p>
+              Third-party services may process information according to their
+              own privacy policies and terms.
+            </p>
+
+            <p>
+              If additional third-party services are included in a released
+              version, applicable privacy disclosures will be updated where
+              necessary.
+            </p>
+          </section>
+
+
+          <section>
+            <h2>7. Analytics and Diagnostics</h2>
+
+            <p>
+              CG Files may use technical diagnostics, crash reporting,
+              analytics, or similar services in future versions to improve
+              application stability and performance.
+            </p>
+
+            <p>
+              If such services are included in a released version, the
+              applicable data collection and processing will be reflected in
+              the application's privacy disclosures and Google Play Data
+              Safety information.
+            </p>
+
+            <p>
+              CG Files does not intentionally use analytics to collect the
+              contents of users' personal files.
+            </p>
+          </section>
+
+
+          <section id="vault">
+            <h2>8. Vault and Security Features</h2>
+
+            <p>
+              CG Files may provide a local Vault feature for protecting
+              selected files.
+            </p>
+
+            <ul>
+              <li>Vault content is intended to remain on the user's device.</li>
+              <li>Sensitive authentication information should not be stored as plain text.</li>
+              <li>Android security facilities may be used for sensitive data.</li>
+              <li>Encryption may be used for supported protected content.</li>
+              <li>Users are responsible for remembering their Vault credentials.</li>
+            </ul>
+
+            <p>
+              No security system can guarantee absolute protection against
+              every possible threat. Users should maintain backups of
+              important files.
+            </p>
+          </section>
+
+
+          <section>
+            <h2>9. Recycle Bin</h2>
+
+            <p>
+              If the Recycle Bin feature is enabled, supported deleted files
+              may be moved to an application-managed recycle area instead of
+              being immediately permanently deleted.
+            </p>
+
+            <p>
+              Users may be able to restore or permanently delete supported
+              files. Exact behavior may vary depending on Android storage
+              restrictions and file location.
+            </p>
+          </section>
+
+
+          <section id="sharing">
+            <h2>10. File Sharing</h2>
+
+            <p>
+              When you choose to share a file using CG Files, Android's system
+              sharing mechanism or another appropriate Android mechanism may
+              be used.
+            </p>
+
+            <p>
+              File sharing occurs as a result of an action initiated by the
+              user. Users should verify the destination application or
+              recipient before sharing sensitive files.
+            </p>
+          </section>
+
+
+          <section>
+            <h2>11. Third-Party Applications</h2>
+
+            <p>
+              CG Files may open files using applications installed on your
+              Android device.
+            </p>
+
+            <p>
+              CG Files does not control the privacy practices of third-party
+              applications. Users should review the privacy policies of those
+              applications before sharing sensitive information with them.
+            </p>
+          </section>
+
+
+          <section id="security">
+            <h2>12. Data Security</h2>
+
+            <p>
+              We take reasonable measures to protect information handled by
+              the application.
+            </p>
+
+            <p>Security measures may include:</p>
+
+            <ul>
+              <li>Android platform security mechanisms</li>
+              <li>Secure application storage</li>
+              <li>Appropriate access controls</li>
+              <li>Secure file-sharing mechanisms</li>
+              <li>Encryption for supported sensitive Vault data</li>
+              <li>Secure handling of application credentials</li>
+            </ul>
+
+            <p>
+              However, no electronic storage or transmission system can be
+              guaranteed to be completely secure.
+            </p>
+          </section>
+
+
+          <section>
+            <h2>13. Internet Connectivity</h2>
+
+            <p>
+              Core file-management functionality is designed to work without
+              an internet connection where Android permissions and the
+              relevant feature permit.
+            </p>
+
+            <p>
+              Internet connectivity may be required for third-party services
+              such as advertising, application updates, or optional online
+              functionality.
+            </p>
+          </section>
+
+
+          <section id="deletion">
+            <h2>14. Data Retention and Deletion</h2>
+
+            <p>
+              CG Files does not require an online user account containing your
+              personal files.
+            </p>
+
+            <p>
+              Files managed by CG Files normally remain on your device under
+              your control.
+            </p>
+
+            <p>
+              Users can remove locally stored application data through
+              Android settings or uninstall the application.
+            </p>
+
+            <p>
+              Advertising-related information processed by third-party
+              providers may be subject to those providers' own retention and
+              deletion practices.
+            </p>
+          </section>
+
+
+          <section id="children">
+            <h2>15. Children's Privacy</h2>
+
+            <p>
+              CG Files is not specifically designed to collect personal
+              information from children.
+            </p>
+
+            <p>
+              We do not intentionally request personal information from
+              children through an account-registration system.
+            </p>
+
+            <p>
+              If you believe that a child has provided personal information
+              to us in a manner that violates applicable law, please contact
+              us using the information below.
+            </p>
+          </section>
+
+
+          <section>
+            <h2>16. Data Sharing</h2>
+
+            <p>
+              Chirag Tech Studios does not sell users' personal information.
+            </p>
+
+            <p>
+              CG Files does not intentionally share users' personal file
+              contents with Chirag Tech Studios servers for ordinary
+              file-management operations.
+            </p>
+
+            <p>
+              Information may be processed by third-party services necessary
+              for application functionality, such as advertising providers,
+              according to their applicable policies and the application's
+              configuration.
+            </p>
+
+            <p>
+              Information may also be disclosed where required to comply with
+              applicable law, legal process, court orders, or legitimate
+              government requests.
+            </p>
+          </section>
+
+
+          <section id="changes">
+            <h2>17. Changes to This Privacy Policy</h2>
+
+            <p>
+              We may update this Privacy Policy when the application, its
+              features, third-party services, advertising configuration, or
+              applicable legal requirements change.
+            </p>
+
+            <p>
+              When significant changes are made, the "Last Updated" date at
+              the top of this policy will be updated.
+            </p>
+          </section>
+
+
+          <section id="contact">
+            <h2>18. Contact Us</h2>
+
+            <p>
+              If you have questions, concerns, or requests regarding this
+              Privacy Policy or CG Files' privacy practices, contact us:
+            </p>
+
+            <div class="contact-box">
+
+              <p>
+                <strong>Developer:</strong><br>
+                Chirag Tech Studios
+              </p>
+
+              <p>
+                <strong>Application:</strong><br>
+                CG Files
+              </p>
+
+              <p>
+                <strong>Privacy Contact:</strong><br>
+
+                <a
+                  class="email"
+                  href="mailto:chiragtechstudioscompany@gmail.com">
+                  chiragtechstudioscompany@gmail.com
+                </a>
+              </p>
+
+              <button
+                class="copy-btn"
+                id="copyEmail">
+                Copy Email
+              </button>
+
+            </div>
+          </section>
+
+
+          <section>
+            <h2>19. Accuracy of Information</h2>
+
+            <p>
+              We aim to keep this Privacy Policy accurate and consistent with
+              the actual functionality and third-party SDKs used by CG Files.
+            </p>
+
+            <p>
+              If the application's data practices change, this Privacy Policy
+              and the relevant Google Play Data Safety information should be
+              updated accordingly.
+            </p>
+          </section>
+
+
+          <section>
+            <h2>20. Final Statement</h2>
+
+            <p>
+              CG Files is designed to give users convenient control over their
+              files while keeping ordinary file-management operations
+              primarily on the user's device.
+            </p>
+
+            <p>
+              We respect user privacy and aim to process only information
+              necessary for application functionality, advertising, security,
+              diagnostics, and improvement.
+            </p>
+
+            <p>
+              <strong>
+                © 2026 Chirag Tech Studios. All rights reserved.
+              </strong>
+            </p>
+          </section>
+
+        </article>
+
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container">
+
+      <p>
+        © <span id="year"></span>
+        <strong>Chirag Tech Studios</strong>
+        · CG Files
+      </p>
+
+      <p>
+        Privacy Policy ·
+        <a href="mailto:chiragtechstudioscompany@gmail.com">
+          Contact Support
+        </a>
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- BACK TO TOP -->
+  <button id="topBtn" aria-label="Back to top">
+    ↑
+  </button>
+
+
+  <script>
+
+    // Current year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+
+    // Theme toggle
+    const themeBtn = document.getElementById("themeBtn");
+
+    const savedTheme =
+      localStorage.getItem("cgfiles-policy-theme");
+
+    if (savedTheme === "light") {
+      document.body.classList.add("light");
+      themeBtn.textContent = "☾";
+    }
+
+    themeBtn.addEventListener("click", function () {
+
+      document.body.classList.toggle("light");
+
+      const isLight =
+        document.body.classList.contains("light");
+
+      localStorage.setItem(
+        "cgfiles-policy-theme",
+        isLight ? "light" : "dark"
+      );
+
+      themeBtn.textContent =
+        isLight ? "☾" : "☼";
+
+    });
+
+
+    // Copy email
+    const copyEmail =
+      document.getElementById("copyEmail");
+
+    copyEmail.addEventListener("click", async function () {
+
+      const email =
+        "chiragtechstudioscompany@gmail.com";
+
+      try {
+
+        await navigator.clipboard.writeText(email);
+
+        copyEmail.textContent =
+          "Email Copied ✓";
+
+        setTimeout(function () {
+
+          copyEmail.textContent =
+            "Copy Email";
+
+        }, 2000);
+
+      } catch (error) {
+
+        window.location.href =
+          "mailto:" + email;
+
+      }
+
+    });
+
+
+    // Back to top
+    const topBtn =
+      document.getElementById("topBtn");
+
+    window.addEventListener("scroll", function () {
+
+      if (window.scrollY > 500) {
+
+        topBtn.style.display = "block";
+
+      } else {
+
+        topBtn.style.display = "none";
+
+      }
+
+    });
+
+    topBtn.addEventListener("click", function () {
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    });
+
+
+    // Smooth anchor navigation
+    document.querySelectorAll(
+      '.toc a[href^="#"]'
+    ).forEach(function (link) {
+
+      link.addEventListener("click", function (event) {
+
+        const targetId =
+          this.getAttribute("href");
+
+        const target =
+          document.querySelector(targetId);
+
+        if (target) {
+
+          event.preventDefault();
+
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+
+        }
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
